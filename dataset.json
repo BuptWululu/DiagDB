@@ -1,0 +1,362 @@
+[
+    {
+        "Question": "Does OceanBase Database conflict with JPA?",
+        "Answer": "No"
+    },
+    {
+        "Question": "Is OceanBase Database a native distributed relational database?",
+        "Answer": "Yes"
+    },
+    {
+        "Question": "Are data files and clog-related files clustered in OceanBase Database?",
+        "Answer": "Yes"
+    },
+    {
+        "Question": "Can you migrate applications from MySQL to OceanBase Database with minimal modifications?",
+        "Answer": "Yes"
+    },
+    {
+        "Question": "Does OceanBase Database support both OLTP and OLAP applications simultaneously?",
+        "Answer": "Yes"
+    },
+    {
+        "Question": "Is each instance in OceanBase Database a tenant?",
+        "Answer": "Yes"
+    },
+    {
+        "Question": "Do different tenants share memory resources in OceanBase Database?",
+        "Answer": "No"
+    },
+    {
+        "Question": "Can the memory limit for an OBServer node be adjusted dynamically?",
+        "Answer": "Yes"
+    },
+    {
+        "Question": "Does OceanBase Database allow for auto scaling of server nodes?",
+        "Answer": "Yes"
+    },
+    {
+        "Question": "Is the analytical processing capability of OceanBase Database limited to 100 GB of data?",
+        "Answer": "No"
+    },
+    {
+        "Question": "Is OceanBase Database compatible with Oracle?",
+        "Answer": "Yes"
+    },
+    {
+        "Question": "Can you use a connection pool without setting a maximum idle time for connections in OceanBase Database?",
+        "Answer": "No"
+    },
+    {
+        "Question": "Does OceanBase Database implement ACID properties for transactions?",
+        "Answer": "Yes"
+    },
+    {
+        "Question": "Are SQL worker threads in OceanBase Database isolated among tenants?",
+        "Answer": "Yes"
+    },
+    {
+        "Question": "Is there a limit on the maximum memory that can be requested each time in OceanBase Database?",
+        "Answer": "Yes"
+    },
+    {
+        "Question": "What SQL statement can be executed to locate errors during PL object creation?",
+        "Answer": "SHOW ERRORS"
+    },
+    {
+        "Question": "Do OceanBase Database logs provide accurate error information during PL operations?",
+        "Answer": "No"
+    },
+    {
+        "Question": "Which table can be queried to find the routing SQL for a PL object?",
+        "Answer": "sys.all_virtual_routine_agent"
+    },
+    {
+        "Question": "Is the `INSERT ALL INTO` syntax supported in MySQL mode?",
+        "Answer": "No"
+    },
+    {
+        "Question": "Can CPU resources of SQL threads be isolated among tenants?",
+        "Answer": "Yes"
+    },
+    {
+        "Question": "What does batch execution in OceanBase refer to?",
+        "Answer": "Transmitting multiple requests simultaneously"
+    },
+    {
+        "Question": "Are both statements and prepared statements suitable for batch execution in JDBC?",
+        "Answer": "Yes"
+    },
+    {
+        "Question": "Should the `rewriteBatchedStatements` attribute be set to `TRUE` for batch execution?",
+        "Answer": "Yes"
+    },
+    {
+        "Question": "Can the JDBC driver cache prepared statements?",
+        "Answer": "Yes"
+    },
+    {
+        "Question": "Is the `ob_enable_batched_multi_statement` parameter set to `TRUE` for batch processing of multiple statements?",
+        "Answer": "Yes"
+    },
+    {
+        "Question": "Can batch execution be monitored by querying the `gv$sql_audit` view?",
+        "Answer": "Yes"
+    },
+    {
+        "Question": "Is index monitoring enabled by default in OceanBase Database?",
+        "Answer": "Yes"
+    },
+    {
+        "Question": "Does sampling in index monitoring guarantee the accuracy of every query recorded?",
+        "Answer": "No"
+    },
+    {
+        "Question": "Is the data collected in the standby database synchronized from the primary database?",
+        "Answer": "Yes"
+    },
+    {
+        "Question": "Does the OceanBase cost model potentially lead to incorrect execution plan selections?",
+        "Answer": "Yes"
+    },
+    {
+        "Question": "What is the minimum functional configuration for an OceanBase Cloud Platform (OCP) server?",
+        "Answer": "16 CPU cores, 32 GB memory, and 1.5 TB storage"
+    },
+    {
+        "Question": "Is a 10 Gbit/s NIC required for the minimum performance configuration of the OceanBase Database computing server?",
+        "Answer": "Yes"
+    },
+    {
+        "Question": "How many OceanBase Database computing servers are required?",
+        "Answer": "3"
+    },
+    {
+        "Question": "What is the note regarding log and data disk sizes related to memory?",
+        "Answer": "The log disk size must be four times larger than the memory size."
+    },
+    {
+        "Question": "Which Linux operating system version is required for Alibaba Cloud Linux?",
+        "Answer": "2 and 3"
+    },
+    {
+        "Question": "Can Debian be used with OceanBase Database?",
+        "Answer": "Yes"
+    },
+    {
+        "Question": "How many replicas are required for the solution that provides recovery from some hardware failures but not city-wide disasters?",
+        "Answer": "3"
+    },
+    {
+        "Question": "Does the three replicas in three IDCs solution require low network latency between the IDCs?",
+        "Answer": "Yes"
+    },
+    {
+        "Question": "Is an automatic failover feature available in the five replicas in five IDCs across three regions solution?",
+        "Answer": "Yes"
+    },
+    {
+        "Question": "What is the Recovery Point Objective (RPO) of the solution with five replicas in three IDCs across two regions?",
+        "Answer": "0"
+    },
+    {
+        "Question": "Does the two IDCs in the same region solution apply when you need to recover from IDC failures?",
+        "Answer": "Yes"
+    },
+    {
+        "Question": "What is a prerequisite for deploying OceanBase Database on supported Linux operating systems?",
+        "Answer": "Configure the network and install a package manager such as YUM or Zypper."
+    },
+    {
+        "Question": "What server architecture is supported by AnolisOS?",
+        "Answer": "x86_64 (including Hygon) or AArch64 (Kunpeng and Phytium)"
+    },
+    {
+        "Question": "Is an OceanBase Cloud Platform service deployment recommended on a single node?",
+        "Answer": "No"
+    },
+    {
+        "Question": "Can city-wide disasters be recovered from by the three replicas in one IDC solution?",
+        "Answer": "No"
+    },
+    {
+        "Question": "What types of elections are there in an OceanBase cluster?",
+        "Answer": "election without a leader"
+    },
+    {
+        "Question": "Can a log-only replica take part in elections?",
+        "Answer": "No"
+    },
+    {
+        "Question": "What is the default lease duration for electing a leader in OceanBase?",
+        "Answer": "4s"
+    },
+    {
+        "Question": "Is there any requirement on the clock offset for the election module since OceanBase Database V4.0.0?",
+        "Answer": "No"
+    },
+    {
+        "Question": "Can the election module elect a new leader if the majority of replicas fail?",
+        "Answer": "No"
+    },
+    {
+        "Question": "Does the election module of an OceanBase cluster require manual maintenance?",
+        "Answer": "No"
+    },
+    {
+        "Question": "What must be checked to view the history of events triggering leader switchover?",
+        "Answer": "DBA_OB_SERVER_EVENT_HISTORY"
+    },
+    {
+        "Question": "Is the leader switchover action automatic when a follower with a higher priority is detected?",
+        "Answer": "Yes"
+    },
+    {
+        "Question": "Does OceanBase Database V4.0.0 provide a method for users to control the election rules?",
+        "Answer": "No"
+    },
+    {
+        "Question": "What compression algorithms are supported for logs in OceanBase Database?",
+        "Answer": "lz4_1.0"
+    },
+    {
+        "Question": "Is it possible to view whether the clogs are synchronized between the followers and the leader?",
+        "Answer": "Yes"
+    },
+    {
+        "Question": "What is returned if the clog sliding window is full on a leader?",
+        "Answer": "-4023"
+    },
+    {
+        "Question": "Does the clog module affect leader elections?",
+        "Answer": "Yes"
+    },
+    {
+        "Question": "What error code is associated with a leader not existing in the OceanBase cluster?",
+        "Answer": "4038"
+    },
+    {
+        "Question": "What happens if the clog disk is full in an OceanBase Database?",
+        "Answer": "Transaction commit is affected"
+    },
+    {
+        "Question": "What does high availability refer to in an IT system?",
+        "Answer": "Capacity to provide services without interruptions."
+    },
+    {
+        "Question": "Does OceanBase Database ensure data reliability?",
+        "Answer": "Yes"
+    },
+    {
+        "Question": "Is single point of failure (SPOF) a concern for high availability?",
+        "Answer": "Yes"
+    },
+    {
+        "Question": "What protocol does OceanBase Database use to ensure leader election?",
+        "Answer": "Paxos"
+    },
+    {
+        "Question": "Can an OceanBase cluster continue providing services when the majority of replicas fail?",
+        "Answer": "No"
+    },
+    {
+        "Question": "What happens during an OBServer node failure in relation to replicas?",
+        "Answer": "Auto re-replication"
+    },
+    {
+        "Question": "Do OceanBase clusters support multi-IDC deployment?",
+        "Answer": "Yes"
+    },
+    {
+        "Question": "Is the recovery time objective (RTO) desirable to be as short as possible?",
+        "Answer": "Yes"
+    },
+    {
+        "Question": "What is the consequence of a leader failure in an OceanBase cluster?",
+        "Answer": "New leader election"
+    },
+    {
+        "Question": "Do the OceanBase structures ensure weak-consistency read services?",
+        "Answer": "Yes"
+    },
+    {
+        "Question": "Is data integrity ensured when an OceanBase node restarts?",
+        "Answer": "Yes"
+    },
+    {
+        "Question": "What are the main types of disaster recovery mechanisms used by OceanBase?",
+        "Answer": "Primary/Standby solution"
+    },
+    {
+        "Question": "Does OceanBase Database allow for standby clusters?",
+        "Answer": "Yes"
+    },
+    {
+        "Question": "Is the mean time to repair (MTTR) important in maintaining high availability?",
+        "Answer": "Yes"
+    },
+    {
+        "Question": "Does the distributed election mechanism prevent split-brain scenarios?",
+        "Answer": "Yes"
+    },
+    {
+        "Question": "Can I add or delete columns in a columnstore table?",
+        "Answer": "Yes"
+    },
+    {
+        "Question": "Do columnstore tables support transactions?",
+        "Answer": "Yes"
+    },
+    {
+        "Question": "Can I convert a rowstore table into a columnstore table using DDL statements?",
+        "Answer": "Yes"
+    },
+    {
+        "Question": "Is there a limit on the transaction size for columnstore tables?",
+        "Answer": "No"
+    },
+    {
+        "Question": "Can I store multiple columns as a whole in a columnstore table?",
+        "Answer": "No"
+    },
+    {
+        "Question": "Do columnstore tables have backup and restore characteristics different from rowstore tables?",
+        "Answer": "No"
+    },
+    {
+        "Question": "Can I create an index on a specific column in a columnstore table?",
+        "Answer": "Yes"
+    },
+    {
+        "Question": "Is a columnstore index the same as an index on a columnstore table?",
+        "Answer": "No"
+    },
+    {
+        "Question": "Do I need to perform major compaction after numerous updates on a columnstore table?",
+        "Answer": "Yes"
+    },
+    {
+        "Question": "Does OceanBase Database store data in MemTables in the columnstore format?",
+        "Answer": "No"
+    },
+    {
+        "Question": "Can I increase the value length of VARCHAR columns in a columnstore table?",
+        "Answer": "Yes"
+    },
+    {
+        "Question": "Are columnstore tables suitable for performing range scans by default?",
+        "Answer": "Yes"
+    },
+    {
+        "Question": "Can I perform offline DDL operations on columnstore tables?",
+        "Answer": "Yes"
+    },
+    {
+        "Question": "In OceanBase, is baseline data stored in a rowstore format on disk?",
+        "Answer": "No"
+    },
+    {
+        "Question": "Are synchronized logs for columnstore tables stored in the rowstore format?",
+        "Answer": "Yes"
+    }
+]
